@@ -6,7 +6,7 @@ const Index = () => {
 
   if (!rootNavigationState?.key) return null;
 
-  return <Redirect href="/content" />;
+  return <Redirect href="content" />;
 };
 
 export default Index;
