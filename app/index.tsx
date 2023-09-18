@@ -1,7 +1,12 @@
-import {Text} from "react-native";
+import {Redirect, useRootNavigationState} from "expo-router";
+
 
 const Index = () => {
-  return <Text>Empty app</Text>;
+  const rootNavigationState = useRootNavigationState();
+
+  if (!rootNavigationState?.key) return null;
+
+  return <Redirect href="/content" />;
 };
 
 export default Index;

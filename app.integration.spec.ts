@@ -7,7 +7,7 @@ describe('index', () => {
     const {getByText} = renderRouter();
 
     await waitFor(() => {
-      expect(getByText("Empty app")).toBeOnTheScreen();
+      expect(getByText("We are inside content")).toBeOnTheScreen();
     });
   });
 });
